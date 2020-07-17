@@ -1,0 +1,5 @@
+com/mytodos/service/MyToDosService.class
+com/mytodos/model/MyToDos.class
+com/mytodos/controller/MyToDosController.class
+com/mytodos/MainApplication.class
+com/mytodos/repository/MyToDosRepository.class
