@@ -29,14 +29,14 @@ public class MyToDosService {
 	}
 
 	public void editMyToDos(MyToDos todo) {
-		boolean checkId = repository.existsById(todo.getId());
-		if (checkId) {
-			repository.save(todo);
-		}else {
-			System.out.println("Not found");
-		}
+		MyToDos dbTodo = repository.getOne(todo.getId());
+		dbTodo.setStartDate(todo.getStartDate());
+		dbTodo.setEndDate(todo.getEndDate());
+		dbTodo.setStatus(todo.getStatus());
+		dbTodo.setTaskName(todo.getTaskName());
+		repository.save(dbTodo);
 	}
-	
+
 	public void deleteMyToDos(Long id) {
 		repository.deleteById(id);
 	}

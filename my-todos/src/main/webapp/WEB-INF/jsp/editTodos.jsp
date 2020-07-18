@@ -8,7 +8,7 @@
 
 </head>
 <body>
-	<h2>create Todo:</h2>
+	<h2>Edit To do's:</h2>
 	<form:form method="POST" action="/Mytodos/add" modelAttribute="mytodos">
 		<table>
 			<tr>
@@ -33,7 +33,7 @@
 			</tr>
 
 			<tr>
-				<td colspan="2"><input type="submit" value="Submit" class="btn btn-primary mb-2" /></td>
+				<td colspan="2"><input type="submit" value="Submit" class="btn btn-warning" /></td>
 			</tr>
 		</table>
 	</form:form>
